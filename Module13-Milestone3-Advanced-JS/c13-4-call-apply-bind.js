@@ -56,7 +56,7 @@ let student3 = {
     math:70
 };
 
-console.log(calculateAvgMarks3.bind(student3));//[Function: bound calculateAvgMarks3]
+// console.log(calculateAvgMarks3.bind(student3));//[Function: bound calculateAvgMarks3]
 const bindfunc= calculateAvgMarks3.bind(student3); 
 bindfunc(75,90) //80
 bindfunc(65,80) //76
