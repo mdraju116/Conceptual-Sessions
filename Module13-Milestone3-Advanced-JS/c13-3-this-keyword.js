@@ -115,7 +115,7 @@ const person3={
         console.log(this); //{ name: 'Raju', age: 25, showName: [Function: showName] }
         console.log(this.name); //Raju
         setTimeout(function(){
-            console.log(this);// Timeout {..}   - that mean nested this can't reffer the main object   //see solution in the below
+            console.log(this);// Timeout {..}   - that means nested this can't reffer the main object   //see solution in the below
             console.log(this.name); //undefined  
         },2000);                
     }
