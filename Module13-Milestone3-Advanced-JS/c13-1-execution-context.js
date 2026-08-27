@@ -1,6 +1,30 @@
-//Execution context has 2 phase :
-//1. Creation phase : only creates a variable/function and allocates memory, but doesn't assign value (ex: var a; [memAdd: xxx01])
-//2. Execution phase : assigns value and execute logics (ex: var a= 30)
+/* 
+Execution Context has 2 main phases:
+1. Creation Phase:
+   JavaScript creates the execution context and allocates memory for
+   variables and functions.
+
+   var → allocated memory and initialized with undefined
+   let/const → allocated memory but remain uninitialized (TDZ)
+   function declaration → entire function is stored in memory
+
+   Example:
+   var a = 30;
+
+   Creation phase:
+   a → undefined
+
+2. Execution Phase:
+   JavaScript executes the code line by line and assigns values,
+   performs calculations, and calls functions.
+
+   Execution phase:
+   a → 30 
+   
+
+📌So the most important thing to remember is:
+Creation Phase = prepare memory; Execution Phase = run the code and assign/use values.
+*/
 
 let a =10;
 console.log(a);
