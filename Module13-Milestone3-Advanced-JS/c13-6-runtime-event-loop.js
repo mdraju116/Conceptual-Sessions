@@ -1,20 +1,22 @@
 
-//VVI Note: JS is a synchronous,single threaded and non-blocking  language.
+//📌📌VVI Note: JS is a synchronous,single threaded and non-blocking  language.
 
-//✅Synchronous : Synchronous means that you can only execute one task at time.
+//✅✅There are 2 types of task in Js.
 
-//✅Asynchronous : Asynchronous means that you can execute multiple task at a time and 
+//✅1.Synchronous : Synchronous means that you can only execute one task at time.
+
+//✅2.Asynchronous : Asynchronous means that you can execute multiple task at a time and 
 // you don't have to finish execution of the current task in order to move on to next one.
 
 
 //✅✅Execution process/sequence
 
-//1.Synchronous task: code editor => Call stack => console
+//➡️1.Synchronous task: code editor => Call stack => console
 
-//2.Asynchronous task (at 13:10 minute): code editor => Call stack => Web Apis => task Queue => Event loop => Call Stack  => console
+//➡️2.Asynchronous task (at 13:10 minute): code editor => Call stack => Web Apis => task Queue => Event loop => Call Stack  => console
 
-//3. mixed tasks :  synchornous task will execute first, then async, and
-//among the async tasks, whose delay time is less he will execute first.
+//➡️3. mixed tasks :  synchornous task will execute first, then async, and
+// among the async tasks, whose delay time is less he will execute first.
 
 
 
@@ -35,7 +37,7 @@ function four(){
 four(); */
 
 
-// //output:
+//➡️output:
 // one
 // two
 // three
@@ -60,7 +62,8 @@ function importantTask(){
 longRunningTask();
 importantTask(); */
 
-//output:
+
+//➡️output:
 // long task done
 // Important
 
@@ -78,7 +81,7 @@ setTimeout(()=>{
     
 },100); */
 
-// // output:
+//➡️ output:
 // 100ms
 // 2000ms
 
@@ -104,7 +107,7 @@ setTimeout(()=>{ //Async
 
 console.log("f"); //sync
 
-//output:
+//➡️output:
 // a
 // b
 // d
