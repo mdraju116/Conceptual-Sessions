@@ -1,3 +1,26 @@
+/* 
+✅✅✅call() vs apply() vs bind()
+call → immediately call with arguments separately
+apply → immediately call with arguments as an array
+bind → create a new function to call later
+
+| Feature                        | `call()`             | `apply()`               | `bind()`             |
+| ------------------------------ | -------------------- | ----------------------- | -------------------- |
+| Main purpose                   | Set `this`           | Set `this`              | Set `this`           |
+| Function executes immediately? | ✅ Yes                | ✅ Yes                   | ❌ No                 |
+| Arguments                      | Passed separately    | Passed as an array      | Passed separately    |
+| Returns                        | Function's result    | Function's result       | A new function       |
+| Syntax                         | `fn.call(obj, a, b)` | `fn.apply(obj, [a, b])` | `fn.bind(obj, a, b)` |
+| Best memory                    | **Call now**         | **Array now**           | **Call later**       |
+
+
+
+*/
+
+
+
+
+
 
 
 
@@ -5,7 +28,6 @@
 function calculateAvgMarks(physics,chemisty){
     const avg=(this.bangla + this.english + this.math +physics +chemisty)/5 ; //80
     console.log(avg);
-    
     
 }
 

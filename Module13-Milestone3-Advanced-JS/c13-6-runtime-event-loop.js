@@ -1,22 +1,32 @@
+/* 
+📌📌VVI Note: JS is a synchronous,single threaded and non-blocking  language.
 
-//📌📌VVI Note: JS is a synchronous,single threaded and non-blocking  language.
+✅✅✅There are 2 types of task in Js.
 
-//✅✅There are 2 types of task in Js.
+✅1.Synchronous : Synchronous means that you can only execute one task at time.
+                    Executed line by line
+✅2.Asynchronous : Asynchronous means that you can execute multiple task at a time and 
+you don't have to finish execution of the current task in order to move on to next one.
+                  Executed through time sequence (whose time is less,will execute first)
 
-//✅1.Synchronous : Synchronous means that you can only execute one task at time.
 
-//✅2.Asynchronous : Asynchronous means that you can execute multiple task at a time and 
-// you don't have to finish execution of the current task in order to move on to next one.
+➡️➡️Asynchronous tasks are two types :
+    ➡️a. Micro tasks : High Priority (executed first)
+    ➡️b. Macro tasks : Low Priority (executed after Micro tasks)
 
 
-//✅✅Execution process/sequence
 
-//➡️1.Synchronous task: code editor => Call stack => console
 
-//➡️2.Asynchronous task (at 13:10 minute): code editor => Call stack => Web Apis => task Queue => Event loop => Call Stack  => console
+✅✅Execution process/sequence
 
-//➡️3. mixed tasks :  synchornous task will execute first, then async, and
-// among the async tasks, whose delay time is less he will execute first.
+➡️1.Synchronous task: code editor => Call stack => console
+
+➡️2.Asynchronous task (at 13:10 minute): code editor => Call stack => Web Apis => task Queue => Event loop => Call Stack  => console
+
+➡️3. mixed tasks :  synchornous task will execute first, then async, and
+among the async tasks, whose delay time is less he will execute first. 
+
+*/
 
 
 
